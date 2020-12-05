@@ -1,0 +1,15 @@
+{% extends "planetaryPage.html" %}
+
+{% block image %} 
+<img src="{{ url_for('static', filename = 'css/images/mercury.jpg') }}" />
+{% endblock %}
+{% block distance %}
+	 57.9 million km
+{% endblock %}
+{% block fact %}
+	Being the smallest planet in our solar system and the closest to the sun
+{% endblock %}
+{% block content %}
+	<p>With a radius of 2440 kilometers, only about 700km more than the Earths moon, Mercury is a very small planet at only about 1/3rd the width of Earth. However, Mercury is a very volatile planet with temperatures heating up to 430 degrees Celsius and at night, due to it lacking an atmosphere, temperatures can drop as low as -180 degrees Celsius. A year on Mercury is only 88 days due to the fact that it rotates around the sun faster than any other planet. One full day night cycle on Mercury actually takes 2 Mercury years at 176 Earth days and due to spinning upright it doesn't experience 'seasons' like many other planets do.</p>
+{% endblock %}}
+

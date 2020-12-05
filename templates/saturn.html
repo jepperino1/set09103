@@ -1,0 +1,16 @@
+
+{% extends "planetaryPage.html" %}
+
+{% block image %} 
+<img src="{{ url_for('static', filename = 'css/images/saturn.jpg') }}" />
+{% endblock %}
+{% block distance %}
+	 1.4335 billion kilometers
+{% endblock %}
+{% block fact %}
+	The famous large rings that surround the planet
+{% endblock %}
+{% block content %}
+	<p>Saturn is the sixth planet from the sun and the most distant planet from Earth that can be seen with the naked eye. Saturn is mostly made of gas and as a result if you were to try and stand on Saturn it wouldn't work, it could even float in water. While other planets have rings like Saturns, they aren't as visible from Earth. The rings are mostly made up of ice, dust and rock with some parts being as small as grains of sand and some are up to a kilometer across. A year on saturn is equal to over 29 years on Earth and takes over 10000 Earth days.</p>
+{% endblock %}}
+

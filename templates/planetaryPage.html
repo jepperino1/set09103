@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>   </title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" /> 
+<style> 
+
+body{
+	background-color: black;
+	color: white;
+}
+body{
+	
+}
+h2{
+	padding-left: 700px;
+}
+.content{
+	padding-left:700px;
+	font-size: 20px;
+	width: 1500px;
+}
+.btn{
+	margin: 0;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+}
+.navbar{
+	background-color: #2f2f2f;
+	width: 1100px;
+}
+.navbar a{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 30px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.info {
+	padding-top: 100px;
+}
+</style>
+</head>
+<body>
+	<div class="navbar"> 
+		<a class="main" href="/main/">Home</a>
+		<a class="mercury" href="/main/mercury/">Mercury</a>
+		<a class="venus" href="/main/venus/">Venus</a>
+		<a class="earth" href="/main/earth/">Earth</a>
+		<a class="mars" href="/main/mars/">Mars</a>
+		<a class="jupiter" href="/main/jupiter/">Jupiter</a>
+		<a class="saturn" href="/main/saturn/">Saturn</a>
+		<a class="uranus" href="/main/uranus/">Uranus</a>
+		<a class="neptune" href="/main/neptune/">Neptune</a>
+		<a class="pluto" href="/main/pluto/">Pluto</a>
+	</div>
+	<div class="info"><h2>Distance from the sun: {% block distance %} {% endblock %} </h2>
+	<h2>Most well known for: {% block fact %} {% endblock %}</h2>
+	</div>
+	<div class="content">
+		<p>Information: {% block content %} {% endblock %}</p>
+	</div>
+	<button type="button" class="btn"><a href="/main/">Return to home</a></button>
+</body>
+</html>
